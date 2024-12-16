@@ -1,0 +1,132 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Навигационная панель -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="@color/nav_bar_background"
+            android:padding="8dp">
+
+            <!-- Логотип компании -->
+            <ImageView
+                android:id="@+id/logo_dubai"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_company_logo"
+                android:contentDescription="Логотип компании" />
+
+            <!-- Кнопки навигации -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дубай"
+                android:background="@null"
+                android:layout_marginStart="100dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Фотография города -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sample_city_image"
+            android:contentDescription="Фотография города"
+            android:scaleType="centerCrop" />
+
+        <!-- Треугольник с текстом -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_triangle"
+            android:layout_marginTop="-40dp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дубай"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Откройте для себя удивительный мир Дубая – города, где пересекаются древние традиции и современные достижения, где пустынные пески соседствуют с футуристическими небоскрёбами, а культурное наследие гармонично сочетается с роскошным образом жизни. Наш тур по Дубаю предложит вам полный спектр впечатлений, раскрывая лучшее, что может предложить этот мегаполис.
+"
+                android:textSize="14sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Надпись -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Что включает тур?"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Экскурсия по достопримечательностям города \n
+Бурдж Халифа: Поднимитесь на вершину самого высокого здания в мире и насладитесь панорамным видом на город и Персидский залив.
+Дубай Молл: Посетите один из крупнейших торговых центров мира, где шопинг сочетается с развлечениями, включая крупнейший аквариум и танцующие фонтаны.
+Пальма Джумейра: Прогулка по знаковому острову в форме пальмы, который символизирует уникальную архитектуру и амбиции Дубая. \n
+2. Сафари по пустыне \n
+Вечерний выезд на джипах 4x4, драйв по барханам и незабываемый закат над песчаными дюнами.
+Традиционные арабские развлечения в лагере – от катания на верблюдах до танцев живота и росписи хной.
+Ужин под звёздами с блюдами арабской кухни в традиционном бедуинском лагере.
+3. Культурное погружение \n
+Район Аль Фахиди: Прогулка по старинному кварталу с узкими улочками, музеями и традиционными домами, где вы сможете почувствовать дух старого Дубая.
+Музей Дубая: Исследуйте богатую историю эмирата, начиная с его бедуинских корней до превращения в мировой центр туризма и торговли.
+Золотой и пряный рынки: Попробуйте восточные специи и полюбуйтесь ювелирными изделиями, наслаждаясь атмосферой арабского базара. \n
+4. Водные приключения \n
+Прогулка на яхте по Персидскому заливу: Оцените линию горизонта Дубая с воды и увидьте знаменитый отель Бурдж аль-Араб и район Марина.
+Парк развлечений Atlantis Aquaventure: Полный день захватывающих водных аттракционов, горок и бассейнов в одном из самых известных аквапарков мира. \n
+5. Релакс и шопинг \n
+Посещение спа-центров и пляжей, где можно отдохнуть после насыщенного дня экскурсий.
+Возможность шопинга в лучших торговых центрах Дубая, включая Mall of the Emirates, где можно найти мировые бренды и уникальные изделия ручной работы."
+            android:textSize="14sp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/go_tour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_triangle"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Оформить тур"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Teeest</string>
+    <string name="dubai">Дубай</string>
+    <string name="stambul">Стамбул</string>
+    <string name="baikal">Байкал</string>
+    <string name="murmansk">Мурманск</string>
+</resources>

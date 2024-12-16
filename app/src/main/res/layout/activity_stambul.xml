@@ -1,0 +1,117 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Навигационная панель -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="@color/nav_bar_background"
+            android:padding="8dp">
+
+            <!-- Логотип компании -->
+            <ImageView
+                android:id="@+id/logo_dubai"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_company_logo"
+                android:contentDescription="Логотип компании" />
+
+            <!-- Кнопки навигации -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Стамбул"
+                android:background="@null"
+                android:layout_marginStart="100dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Фотография города -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/stambul"
+            android:contentDescription="Фотография города"
+            android:scaleType="centerCrop" />
+
+        <!-- Треугольник с текстом -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_triangle"
+            android:layout_marginTop="-40dp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Стамбул"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Город, не похожий ни на какой другой,Стамбул сочетает в себе удивительно богатую историю с современной культурой . Стамбул, полный стиля, архитектурных чудес, восхитительной кухни и бурлящей ночной жизни, делает город уникальным для отдыха.
+"
+                android:textSize="14sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Что включает тур?"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Посещение достопримечательностей.Cреди популярных мест — мечеть Айя София, дворец Топкапы, Голубая мечеть, Гранд-базар, Галатская башня, Цистерна Базилика, дворец Долмабахче, улица Истикляль, район Таксим и другие. \n
+Морская прогулка по Босфору.С моря можно увидеть основные достопримечательности города, например Айя-Софию и Голубую мечеть, Галатскую башню, мосты через Босфор, дворцы Топкапы и Долмабахче. \n
+Поездка на ретро-трамвае.Например, по маршруту от площади Таксим по улице Истикляль. \n
+Посещение нетуристических мест. Например, прогулка до секретного дворика с католической базиликой, посещение антикварного рынка в районах Фенер и Балат."
+            android:textSize="14sp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/go_tour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_triangle"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Оформить тур"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

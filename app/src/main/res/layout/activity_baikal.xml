@@ -1,0 +1,117 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Навигационная панель -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="@color/nav_bar_background"
+            android:padding="8dp">
+
+            <!-- Логотип компании -->
+            <ImageView
+                android:id="@+id/logo_baikal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_company_logo"
+                android:contentDescription="Логотип компании" />
+
+            <!-- Кнопки навигации -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Байкал"
+                android:background="@null"
+                android:layout_marginStart="115dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Фотография города -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/baikal"
+            android:contentDescription="Фотография города"
+            android:scaleType="centerCrop" />
+
+        <!-- Треугольник с текстом -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_triangle"
+            android:layout_marginTop="-40dp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Байкал"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мурманск - это город с богатой историей, связанной с развитием Северного морского пути и обороны во время Второй мировой войны. В городе есть много музеев, посвященных этим темам, таких как Мурманский областной краеведческий музей, музей-памятник Атомный ледокол Ленин и другие."
+                android:textSize="14sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Что включает тур?"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Экскурсионные туры. Осмотр исторических памятников, посещение музеев, в том числе музея под открытым небом «Тальцы» и «Музея Байкала» в посёлке Листвянка. \n
+Активный отдых. Пешие походы, велосипедные прогулки, каякинг или трекинг, сплав на байдарках к острову Ольхон, круиз на теплоходе. Зимой — горнолыжные спуски, снегоходы и собачьи упряжки. \n
+Спокойный отдых. Бронирование мест на базах отдыха, посещение пляжей и островов Байкала, остановка в городах на его побережье. \n
+Культурные и этнографические туры. Путешествие в одно из поселений, ночёвка в чуме, встреча с шаманом. \n
+Научные и экологические туры. Наблюдение за птицами или редкими животными, исследование природных объектов."
+            android:textSize="14sp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/go_tour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_triangle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Оформить тур"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
