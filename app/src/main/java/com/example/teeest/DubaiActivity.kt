@@ -21,7 +21,8 @@ class DubaiActivity : AppCompatActivity() {
 
         val goTour: LinearLayout = findViewById(R.id.go_tour)
         goTour.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, TourActivity::class.java)
+            intent.putExtra("SELECTED_CITY", "Дубай")
             startActivity(intent)
         }
     }
